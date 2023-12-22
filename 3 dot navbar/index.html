@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 dotnavbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="menu" onclick="fun()">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="frame1" id="frame1">
+
+            <li>
+                <span class="
+                fa-solid fa-dashboard"></span>
+                <a href="#">dashboard</a>
+            </li>
+
+
+            <li>
+                <span class="
+                fa-solid fa-house"></span>
+                <a href="#">Home</a>
+            </li>
+
+
+            <li>
+                <span class="
+                    fa fa-dashboard"></span>
+                <a href="#">About</a>
+            </li>
+
+
+            <li>
+                <span class="
+                fa fa-wrench"></span>
+                <a href="#">Service</a>
+            </li>
+
+
+            <li>
+                <span class="
+                fa-solid fa-headset"></span>
+                <a href="#">Contact</a>
+            </li>
+
+
+            <li>
+                <span class="
+                fa-solid fa-power-off"></span>
+                <a href="#">LogOut</a>
+            </li>
+
+
+            <li>
+                <a onclick="remove()" href="#">
+                    <span class="
+                    info"></span>
+                    Back</a>
+            </li>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+
+
+        function fun() {
+            document.getElementById("frame1").style.visibility = "visible"
+            document.getElementById("frame1").classList.add("style");
+        }
+
+        function remove() {
+            document.getElementById("frame1").classList.remove("style");
+            document.getElementById("frame1").style.visibility = "hidden";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
